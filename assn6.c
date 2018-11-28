@@ -22,6 +22,20 @@
 #include "clook.c"
 
 int main(int argc, char *argv[]) {
+  FILE *fp = stdin;
+
+  if (argc > 1) {
+    fp = fopen(argv[1], "r");
+  } else {
+    printf("You need to provide a filename\n");
+  }
+
+  if (fp == NULL) {
+    prinft("Unable to open the file %s\n", argv[1]);
+    perror("Trying to open file");
+    return -1;
+  }
+
   fcfs();
   sstf();
   look();
