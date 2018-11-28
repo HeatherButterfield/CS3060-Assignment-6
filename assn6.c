@@ -36,6 +36,11 @@ int main(int argc, char *argv[]) {
     return -1;
   }
 
+  int blockList[100];
+  while (fscanf(fp, "%d", &num) {
+    printf("num: %d\n", num);
+  }
+
   fcfs();
   sstf();
   look();
