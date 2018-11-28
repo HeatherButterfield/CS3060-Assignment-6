@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void sstf() {
+void sstf(int blockList[]) {
   printf("sstf works!\n");
 }

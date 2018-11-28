@@ -38,12 +38,12 @@ int main(int argc, char *argv[]) {
 
   int blockList[100];
   int num;
-  while (fscanf(fp, "%d", &num == 1) {
+  while (fscanf(fp, "%d", &num) == 1) {
     printf("num: %d\n", num);
   }
 
-  fcfs();
-  sstf();
-  look();
-  clook();
+  fcfs(blockList);
+  sstf(blockList);
+  look(blockList);
+  clook(blockList);
 }
