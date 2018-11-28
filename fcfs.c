@@ -2,5 +2,5 @@
 #include <stdlib.h>
 
 void fcfs() {
-  printf("fcfs works!\n")
+  printf("fcfs works!\n");
 }

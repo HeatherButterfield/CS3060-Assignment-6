@@ -2,5 +2,5 @@
 #include <stdlib.h>
 
 void sstf() {
-  printf("sstf works!\n")
+  printf("sstf works!\n");
 }

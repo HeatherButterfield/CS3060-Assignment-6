@@ -2,5 +2,5 @@
 #include <stdlib.h>
 
 void clook() {
-  printf("clook works!\n")
+  printf("clook works!\n");
 }
