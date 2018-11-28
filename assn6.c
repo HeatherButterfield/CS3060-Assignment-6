@@ -37,7 +37,8 @@ int main(int argc, char *argv[]) {
   }
 
   int blockList[100];
-  while (fscanf(fp, "%d", &num) {
+  int num;
+  while (fscanf(fp, "%d", &num)) {
     printf("num: %d\n", num);
   }
 
