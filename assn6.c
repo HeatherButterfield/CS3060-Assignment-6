@@ -1,4 +1,4 @@
-/**
+/*
  *
  * Assignment 6
  * CS 3060 section 601
@@ -22,28 +22,32 @@
 #include "clook.c"
 
 int main(int argc, char *argv[]) {
-  FILE *fp = stdin;
+	FILE *fp = stdin;
 
-  if (argc > 1) {
-    fp = fopen(argv[1], "r");
-  } else {
-    printf("You need to provide a filename\n");
-  }
+	if (argc > 1) {
+		fp = fopen(argv[1], "r");
+	} else {
+		printf("You need to provide a filename\n");
+	}
 
-  if (fp == NULL) {
-    printf("Unable to open the file %s\n", argv[1]);
-    perror("Trying to open file");
-    return -1;
-  }
+	if (fp == NULL) {
+		printf("Unable to open the file %s\n", argv[1]);
+		perror("Trying to open file");
+		return -1;
+	}
 
-  int blockList[100];
-  int num;
-  while (fscanf(fp, "%d", &num)) {
-    printf("num: %d\n", num);
-  }
+	int blockList[100];
+	int num;
+	int i = 0;
+	int count = 0;
+	while (fscanf(fp, "%d", &num) == 1) {
+		blockList[i] = num;
+		count++;
+		i++;
+	}
 
-  fcfs();
-  sstf();
-  look();
-  clook();
+	fcfs(blockList, count);
+	sstf(blockList, count);
+	look(blockList, count);
+	clook(blockList, count);
 }
