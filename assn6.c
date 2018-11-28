@@ -31,9 +31,14 @@ int main(int argc, char *argv[]) {
   }
 
   if (fp == NULL) {
-    prinft("Unable to open the file %s\n", argv[1]);
+    printf("Unable to open the file %s\n", argv[1]);
     perror("Trying to open file");
     return -1;
+  }
+
+  int blockList[100];
+  while (fscanf(fp, "%d", &num) {
+    printf("num: %d\n", num);
   }
 
   fcfs();
