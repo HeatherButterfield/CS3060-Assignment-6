@@ -10,7 +10,7 @@
  * this term, I understand that both myself and the student that submitted
  * the copy will receive a zero on this assignment.
  *
- * @author Heather Hyer, Mariah Bleak, Daniel Asay
+ * @author Myron Burton, Heather Hyer, Mariah Bleak, Daniel Asay
  *
  */
 
