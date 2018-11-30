@@ -26,8 +26,6 @@ int main(int argc, char *argv[]) {
 
 	if (argc > 1) {
 		fp = fopen(argv[1], "r");
-	} else {
-		printf("You need to provide a filename\n");
 	}
 
 	if (fp == NULL) {
