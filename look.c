@@ -2,5 +2,5 @@
 #include <stdlib.h>
 
 void look(int blockList[], int count) {
-  printf("look works!\n");
+	printf("look works!\n");
 }

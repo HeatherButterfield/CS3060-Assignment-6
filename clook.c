@@ -2,5 +2,5 @@
 #include <stdlib.h>
 
 void clook(int blockList[], int count) {
-  printf("clook works!\n");
+	printf("clook works!\n");
 }
